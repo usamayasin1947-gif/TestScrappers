@@ -11,7 +11,7 @@ struct SecondView: View {
                     .frame(width: geometry.size.width / 2, height: geometry.size.width / 2)
                     .cornerRadius(20)
                     .overlay(
-                        Text("Tap to View Details")
+                        Text("Tap Here")
                             .foregroundColor(.white)
                             .font(.headline)
                     )

@@ -25,6 +25,7 @@
 		4AC8D2222CCAAA2C001665DA /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC8D2212CCAAA2C001665DA /* BaseViewModel.swift */; };
 		4AC8D2242CCAAA93001665DA /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC8D2232CCAAA93001665DA /* DetailViewModel.swift */; };
 		4AC8D2262CCAADB9001665DA /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC8D2252CCAADB9001665DA /* DetailView.swift */; };
+		4AC8D2292CCAB061001665DA /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC8D2282CCAB061001665DA /* AppConstant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		4AC8D2212CCAAA2C001665DA /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		4AC8D2232CCAAA93001665DA /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		4AC8D2252CCAADB9001665DA /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		4AC8D2282CCAB061001665DA /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,13 +111,13 @@
 			path = NetworkLayer;
 			sourceTree = "<group>";
 		};
-		4AC8D1F82CCA6670001665DA /* Utilities */ = {
+		4AC8D1F82CCA6670001665DA /* Network */ = {
 			isa = PBXGroup;
 			children = (
 				4AC8D1F52CCA6670001665DA /* NetworkConfig */,
 				4AC8D1F72CCA6670001665DA /* NetworkLayer */,
 			);
-			path = Utilities;
+			path = Network;
 			sourceTree = "<group>";
 		};
 		4AC8D1FA2CCA6670001665DA /* ViewModels */ = {
@@ -131,7 +133,6 @@
 		4AC8D1FC2CCA6670001665DA /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				4AC8D2172CCA7D6E001665DA /* Component */,
 				4AC8D2152CCA7D55001665DA /* Module */,
 			);
 			path = Views;
@@ -142,8 +143,9 @@
 			children = (
 				4AC8D1EF2CCA6670001665DA /* Preview Content */,
 				4AC8D20E2CCA6EB6001665DA /* googleService.plist */,
+				4AC8D1F82CCA6670001665DA /* Network */,
 				4AC8D1FC2CCA6670001665DA /* Views */,
-				4AC8D1F82CCA6670001665DA /* Utilities */,
+				4AC8D2272CCAB019001665DA /* Helpers */,
 				4AC8D1FA2CCA6670001665DA /* ViewModels */,
 				4AC8D1ED2CCA6670001665DA /* Models */,
 				4AC8D1FD2CCA6670001665DA /* TestApp.swift */,
@@ -194,6 +196,23 @@
 				4AC8D2212CCAAA2C001665DA /* BaseViewModel.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		4AC8D2272CCAB019001665DA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4AC8D22A2CCAB08E001665DA /* Constant */,
+				4AC8D2172CCA7D6E001665DA /* Component */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4AC8D22A2CCAB08E001665DA /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				4AC8D2282CCAB061001665DA /* AppConstant.swift */,
+			);
+			path = Constant;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +299,7 @@
 				4AC8D2082CCA6670001665DA /* AuthViewModel.swift in Sources */,
 				4AC8D20A2CCA6670001665DA /* TestApp.swift in Sources */,
 				4AC8D21F2CCA88AA001665DA /* SecondView.swift in Sources */,
+				4AC8D2292CCAB061001665DA /* AppConstant.swift in Sources */,
 				4AC8D2242CCAAA93001665DA /* DetailViewModel.swift in Sources */,
 				4AC8D2062CCA6670001665DA /* NetworkConfig.swift in Sources */,
 				4AC8D2262CCAADB9001665DA /* DetailView.swift in Sources */,

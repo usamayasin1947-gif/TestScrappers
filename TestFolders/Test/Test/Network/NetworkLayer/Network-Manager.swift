@@ -10,9 +10,8 @@ class NetworkManager {
 
         var request = URLRequest(url: url)
         request.httpMethod = networkType.rawValue
-
-        let apiToken = "01ca8bf38c4125" 
-        request.setValue("Bearer \(apiToken)", forHTTPHeaderField: "Authorization")
+ 
+        request.setValue("Bearer \(AppConstant.apiToken)", forHTTPHeaderField: "Authorization")
 
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             if let error = error {
